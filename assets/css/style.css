@@ -36,14 +36,25 @@ img {
   width: 100%;
 }
 
-.section-paddding {
+.section-padding {
   padding-top: 120px;
   padding-bottom: 120px;
+}
+
+.text-brand {
+  color: var(--c-brand);
 }
 
 .navbar {
   padding-top: 30px;
   padding-bottom: 30px;
+  transition: var(--transition);
+}
+
+.navbar.scrolled {
+  padding-top: 7px;
+  padding-bottom: 7px;
+  background-color: #fff;
 }
 
 @media (min-width: 992px){
@@ -82,5 +93,33 @@ img {
 
 .social-icon:hover {
   background-color: transparent;
+}
+
+
+/* Button */
+.btn {
+  padding: 10px 24px;
+  border-radius: 0;
+  border-width: 2px;
+  font-weight: 500;
+}
+
+.btn-brand,
+.btn-brand:focus {
+  background-color: var(--c-brand);
+  color: #fff;
+  border-color: var(--c-brand);
+}
+
+.btn-brand:hover {
+  background-color: transparent;
+  color: var(--c-brand);
+  border-color: var(--c-brand);
+}
+/* Home  */
+#home {
+  background-image: url(/assets/images/hero.jpg);
+  background-position: center;
+  background-size: cover;
 }
 
