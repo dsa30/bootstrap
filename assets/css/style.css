@@ -1,0 +1,86 @@
+/* Font variables */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+:root {
+  --c-brand: #f83691;
+  --c-brand-rgba: 248, 54, 145;
+  --c-dark: #303050;
+  --c-body: #636383;
+  --f-main: font-family: 'Roboto', sans-serif;
+  --transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+  --shadow: 0px 15px 40px rgba(0,0,0,0.1);
+}
+
+body {
+  /* font-family: var(--f-main); */
+  color: var(--c-body);
+  line-height: 1.7;
+}
+
+h1, .h1, h2, .h2, h3,.h3, h4,.h4,h5,.h5,h6,.h6 {
+  font-weight: 700;
+  color: var(--c-dark);
+}
+
+a {
+  text-decoration: none;
+  color: var(--c-dark);
+  transition: var(--transition);
+}
+
+a:hover {
+  color: var(--c-brand);
+}
+
+img {
+  width: 100%;
+}
+
+.section-paddding {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.navbar {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+@media (min-width: 992px){
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+}
+
+.navbar .navbar-nav .nav-link {
+  font-weight: 500;
+  color: var(--c-dark);
+}
+
+.navbar .navbar-nav .nav-link:hover {
+  color: var(--c-brand);
+}
+
+.navbar-brand {
+  font-size: 24px;
+  font-weight: 700;
+  color: dark;
+}
+
+.social-icon {
+  width: 36px;
+  height: 36px;
+  background-color: var(--c-brand);
+  color: #fff;
+  border: 2px solid var(--c-brand);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 6px;
+}
+
+.social-icon:hover {
+  background-color: transparent;
+}
+
